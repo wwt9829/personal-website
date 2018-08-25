@@ -9080,3 +9080,19 @@ a.text-dark:hover, a.text-dark:focus {
 .social-icons li a i {
     font-size: 1.3em;
 }
+
+#card1{
+    height: 492px;
+}
+
+#card2{
+    height: 600px;
+}
+
+#card3{
+    height: 492px;
+}
+
+#card4{
+    height: 532px;
+}
