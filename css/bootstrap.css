@@ -18,7 +18,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #007bff;
+  --primary: #494480;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -2335,14 +2335,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #494480;
+  border-color: #6c757d;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color: #7873b4;
+  border-color: #6c757d;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -4825,7 +4825,7 @@ input[type="button"].btn-block {
 
 .badge-info {
   color: #fff;
-  background-color: #17a2b8;
+  background-color: #494480;
 }
 
 .badge-info[href]:hover, .badge-info[href]:focus {
@@ -9059,7 +9059,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .social-icons li a:hover {
-    color: #48b14d;
+    color: #ffffff;
 }
 
 .social-icons li a i {
@@ -9067,7 +9067,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .timeline {
-    border-left: 3px solid #007bff;
+    border-left: 3px solid #494480;
     border-bottom-right-radius: 2px;
     border-top-right-radius: 2px;
     position: relative;
@@ -9077,7 +9077,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .timeline .item {
     position: relative;
-    margin-bottom: 45px
+    margin-bottom: 45px;
+    max-width: 100%;
 }
 
 .timeline .item:last-child {
@@ -9101,7 +9102,7 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     background: #fff;
-    border: 3px solid #007bff
+    border: 3px solid #494480
 }
 
 .timeline .item:after {
@@ -9120,7 +9121,7 @@ a.text-dark:hover, a.text-dark:focus {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    background: #007bff;
+    background: #494480;
     z-index: 10
 }
 
@@ -9166,12 +9167,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 #profile-bg{
     background: #dee3eb;
-}
-
-#profile-picture{
-    width: 90%;
-    height: 64%;
-    padding-top: 7%;
 }
 
 #projects-bg{
