@@ -2385,7 +2385,7 @@ fieldset:disabled a.btn {
 
 .btn-secondary.disabled, .btn-secondary:disabled {
   color: #fff;
-  background-color: #6c757d;
+  background-color: #e0f1ff;
   border-color: #6c757d;
 }
 
@@ -9032,22 +9032,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 /*# sourceMappingURL=bootstrap.css.map */
 
-#mission-statement{
-    color: white;
-    background-image: url("../image/mission-statement-background.jpg");
-    background-position: center;
-    padding-top: 2%;
-    padding-bottom: 5%;
-}
-
-#projects-bg{
-    background: lightgray;
-}
-
-#profile-picture{
-    width: 87%;
-    height: 60%;
-}
+/*custom css code below this line*/
 
 .social-icons {
     padding-left: 0px;
@@ -9081,6 +9066,118 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 1.3em;
 }
 
+.timeline {
+    border-left: 3px solid #007bff;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    position: relative;
+    padding: 0 30px;
+    margin-left: 280px;
+}
+
+.timeline .item {
+    position: relative;
+    margin-bottom: 45px
+}
+
+.timeline .item:last-child {
+    margin-bottom: 0
+}
+
+.timeline .item:before {
+    content: "";
+    position: absolute;
+    left: -43px;
+    top: 0;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: #fff;
+    border: 3px solid #007bff
+}
+
+.timeline .item:after {
+    content: "";
+    position: absolute;
+    left: -37px;
+    top: 6px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: #007bff;
+    z-index: 10
+}
+
+.timeline .work-place {
+    position: relative
+}
+
+.timeline .location {
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+
+.timeline .location .fa {
+    margin-right: 5px
+}
+
+.timeline .place {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 300
+}
+
+.timeline .job-meta {
+    position: absolute;
+    left: -280px;
+    top: 0
+}
+
+.timeline .job-meta .title {
+    font-size: 18px;
+    max-width: 220px
+}
+
+#mission-statement{
+    color: white;
+    background-image: url("../image/mission-statement-background.jpg");
+    background-position: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+#profile-bg{
+    background: #dee3eb;
+}
+
+#profile-picture{
+    width: 90%;
+    height: 64%;
+    padding-top: 7%;
+}
+
+#projects-bg{
+    background: #dee3eb;
+}
+
 #card1{
     height: 492px;
 }
@@ -9095,4 +9192,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 #card4{
     height: 532px;
+}
+
+#contact-bg{
+    background: #dee3eb;
 }
