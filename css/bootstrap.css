@@ -993,9 +993,12 @@ button.bg-dark:focus {
 #mission-statement{
     color: white;
     background-image: url("../img/mission-statement-background.png");
-    background-position: center;
+    background-repeat:repeat-x;
+    background-attachment:fixed;
     padding-top: 2%;
     padding-bottom: 5%;
+    margin: 0;
+    overflow: hidden;
 }
 
 #profile-bg{
