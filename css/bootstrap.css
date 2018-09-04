@@ -726,6 +726,7 @@ a > code {
 .badge-info {
   color: #fff;
   background-color: #494480;
+  white-space: nowrap;
 }
 
 .badge-info[href]:hover, .badge-info[href]:focus {
