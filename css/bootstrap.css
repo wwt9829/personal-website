@@ -686,6 +686,7 @@ a > code {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  height: 900px;
 }
 
 .card > hr {
@@ -993,7 +994,7 @@ button.bg-dark:focus {
 
 #mission-statement{
     color: white;
-    background-image: url("../img/mission-statement-background.png");
+    background-image: url("../img/webp/mission-statement-background.webp");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1009,22 +1010,6 @@ button.bg-dark:focus {
 
 #projects-bg{
     background: #dee3eb;
-}
-
-#card1{
-    height: 492px;
-}
-
-#card2{
-    height: 600px;
-}
-
-#card3{
-    height: 492px;
-}
-
-#card4{
-    height: 532px;
 }
 
 #contact-bg{

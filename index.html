@@ -21,7 +21,7 @@
     <link rel="shortcut icon" href="./favicon.ico" />
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -95,11 +95,6 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://plus.google.com/u/0/117252053234397177896" target="_blank" rel="noopener">
-                                <i class="fab fa-google"></i>
-                            </a>
-                        </li>
-                        <li>
                             <a href="https://medium.com/@wywyit" target="_blank" rel="noopener">
                                 <i class="fab fa-medium"></i>
                             </a>
@@ -150,7 +145,7 @@
                 <!-- profile picture -->
                 <div class="col-md-4">
                     <br>
-                    <img class="rounded-0 d-block mx-auto" src="img/profile-picture.png" style="width: 100vw; height: 100vh; max-height: 240px; max-width: 300px;" alt="Picture of Wyatt Tauber" id="profile-picture">
+                    <img class="rounded-0 d-block mx-auto" src="img/webp/profile-picture.webp" onError="this.onerror=null;this.src='img/profile-picture.png';" style="width: 100vw; height: 100vh; max-height: 240px; max-width: 300px;" alt="Picture of Wyatt Tauber" id="profile-picture">
                     <br>
                 </div>
 
@@ -171,7 +166,7 @@
 
                 <!-- icon 1 -->
                 <div class="col-lg-4 col-sm-6 text-center mb-4">
-                    <img class="img-fluid d-block mx-auto" src="img/security-plus.png" alt="CompTIA Security+ logo">
+                    <img class="img-fluid d-block mx-auto" src="img/webp/security-plus.webp" onError="this.onerror=null;this.src='img/security-plus.png';" alt="CompTIA Security+ logo">
                     <br>
                     <h3>Certifications
                         <small>CompTIA</small>
@@ -182,7 +177,7 @@
 
                 <!-- icon 2 -->
                 <div class="col-lg-4 col-sm-6 text-center mb-4">
-                    <img class="img-fluid d-block mx-auto" src="img/yea.png" alt="NFIB Young Entrepreneur Foundation logo">
+                    <img class="img-fluid d-block mx-auto" src="img/webp/yea.webp" onError="this.onerror=null;this.src='img/yea.png';" alt="NFIB Young Entrepreneur Foundation logo">
                     <br>
                     <h3>Awards
                         <small>ACT, NFIB</small>
@@ -193,7 +188,7 @@
 
                 <!-- icon 3 -->
                 <div class="col-lg-4 col-sm-6 text-center mb-4">
-                    <img class="img-fluid d-block mx-auto" src="img/d2s-awards.png" alt="Scholarship America Dreams To Success Awards logo">
+                    <img class="img-fluid d-block mx-auto" src="img/webp/d2s-awards.webp" onError="this.onerror=null;this.src='img/d2s-awards.png';" alt="Scholarship America Dreams To Success Awards logo">
                     <br>
                     <h3>Activism
                         <small>
@@ -233,11 +228,17 @@
                         <!-- column 1 -->
                         <div class="col-lg-3 col-md-6 mb-4">
                             <div class="card">
-                                <img class="card-img-top" src="img/rc3-spring-2018.png" alt="RC3 Spring 2018 Scoreboard">
-                                <div class="card-body" id="card2">
+                                <img class="card-img-top" src="img/webp/ritsec.webp" onError="this.onerror=null;this.src='img/ritsec.png';" alt="RC3 Spring 2018 Scoreboard">
+                                <div class="card-body">
                                     <h4 class="card-title">RIT Security Club (RITSEC)</h4>
-                                    <p class="card-text">Fall 2018 | Spring Semester CTF 3rd Place</p>
-                                    <p class="card-text">I create weekly CTF challenge solutions for the Fall 2018 RITSEC CTF. My goal is for my solutions to give insight into the strategy and reasoning of a CTF. I do this because as a freshman, I did not have experience with these tools and didn't know who to ask for help, and I hope my solutions will help the next class of freshmen get started with CTFs.</p>
+                                    <p class="card-text">Current | 3rd, 4th Place</p>
+                                    <p class="card-text">I participate in and create weekly CTF challenge solutions for
+                                        the RITSEC CTF, a semester-long Capture the Flag challenge by the RIT Security
+                                        Club. My goal is for my solutions to give insight into the strategy and reasoning
+                                        of a CTF. </p>
+                                    <p>I do this because as a freshman, I did not have experience with these
+                                        tools and didn't know who to ask for help, and I hope my solutions will help
+                                        the next class of freshmen get started with CTFs.</p>
                                     <p class="card-text">Read my challenge write-ups below.</p>
                                 </div>
                                 <div class="card-footer">
@@ -248,45 +249,61 @@
 
                         <!-- column 2 -->
                         <div class="col-lg-3 col-md-6 mb-4">
-                          <div class="card">
-                            <img class="card-img-top" src="img/rit-impress.png" alt="RIT IMPRESS students in a classroom">
-                            <div class="card-body" id="card1">
-                              <h4 class="card-title">IMPRESS Summer Experience</h4>
-                                <p class="card-text">Summer 2018 | CASTLE Research Assistant/Summer Experience Peer Leader</p>
-                              <p class="card-text">Metacognition: A Transformative Approach to Improving Retention of Deaf/Hard-of-Hearing and First Generation STEM Majors</p>
+                            <div class="card">
+                                <img class="card-img-top" src="img/webp/frc-finger-lakes.webp" onError="this.onerror=null;this.src='img/frc-finger-lakes.png';" alt="FRC Finger Lakes Regional 2018 setup">
+                                <div class="card-body">
+                                    <h4 class="card-title">FIRST Robotics Competition (FRC)</h4>
+                                    <p class="card-text">Current | RIT FIRST, Team 3102</p>
+                                    <p class="card-text">As an alumnus from FRC Team 3102 (2014-2017), I have been actively involved
+                                        in many FRC events. I volunteer at the Finger Lakes FRC Regional hosted by RIT and at off-season
+                                        competitions in Minnesota and the Rochester, NY area.</p>
+                                    <p> In addition to competitions, I assisted in starting two new FRC teams in the 2017 season, 6453 and 6720,
+                                        and have integrate robotics and STEM education in school and community activities in Minnesota.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a class="btn btn-primary">Soon...</a>
+                                </div>
                             </div>
-                            <div class="card-footer">
-                              <a class="btn btn-primary">Soon...</a>
-                            </div>
-                          </div>
                         </div>
 
                         <!-- column 3 -->
                         <div class="col-lg-3 col-md-6 mb-4">
-                          <div class="card">
-                            <img class="card-img-top" src="img/frc-finger-lakes.png" alt="FRC Finger Lakes Regional 2018 setup">
-                            <div class="card-body" id="card3">
-                              <h4 class="card-title">FIRST Robotics Competition (FRC) Finger Lakes Regional</h4>
-                              <p class="card-text">Spring Break 2018 | Field Setup/Pit Admin Support</p>
-                                <p class="card-text">I volunteered at the Finger Lakes FRC Regional hosted by RIT. The event was held March 15-17, 2018 in the Gordon Field House. 50 teams attended the regional.</p>
+                            <div class="card">
+                                <img class="card-img-top" src="img/webp/rogue-devices.webp" onError="this.onerror=null;this.src='img/rogue-devices.png';" alt="Access Network mentoring paper">
+                                <div class="card-body">
+                                    <h4 class="card-title">Rogue Network Devices</h4>
+                                    <p class="card-text">December 2018 | Honors Project</p>
+                                    <p class="card-text">To expand on the topics covered in my Network Services class,
+                                        I identified common security vulnerabilities and oversights that would allow an
+                                        attacker to take control of a network.</p>
+                                    <p>Then, I created rogue devices on a network,
+                                        determined how to effectively detect and isolate them, and learned about technologies
+                                        to increase network security. I plan to expand on this project with more activities
+                                    and details during RIT's 2018-19 intercession.</p>
+                                    <p>See my project below.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="https://docs.google.com/presentation/d/1EO6w5E0oN7OR2HLKyfyOpbuN9dxqW4gNcyTQoTSrKfY" class="btn btn-primary" target="_blank" rel="noopener">Learn More</a>
+                                </div>
                             </div>
-                            <div class="card-footer">
-                                <a class="btn btn-primary">Soon...</a>
-                            </div>
-                          </div>
                         </div>
 
                         <!-- column 4 -->
                         <div class="col-lg-3 col-md-6 mb-4">
                           <div class="card">
-                            <img class="card-img-top" src="img/access-workshop.png" alt="Access Network mentoring paper">
-                            <div class="card-body"  id="card4">
-                              <h4 class="card-title">Access Network Mentoring Workshop</h4>
-                              <p class="card-text">December 2017 | RIT Representative</p>
-                                <p class="card-text">I attended the Access Network's annual mentoring workshop hosted in Tempe, Arizona by Arizona State University's Sundial Project and assisted in developing the goals, activities, and direction of the Network's summer camp for incoming minority, rural, and first-generation STEM majors.</p>
+                            <img class="card-img-top" src="img/webp/rit-impress.webp" onError="this.onerror=null;this.src='img/rit-impress.png';"alt="RIT IMPRESS students in a classroom">
+                            <div class="card-body">
+                              <h4 class="card-title">IMPRESS/Access Network</h4>
+                                <p class="card-text">2017 - 2018 | RIT CASTLE Research Assistant and Peer Leader</p>
+                                <p class="card-text">I assisted in coordinating the RIT IMPRESS Summer Program
+                                  to provide support for  underrepresented freshmen in STEM majors. My work is included in
+                                    the report <i>Metacognition: A Transformative Approach to Improving Retention of
+                                        Deaf/Hard-of-Hearing and First Generation STEM Majors</i>.</p>
+                                <p>I also have represented RIT at events for the Access Network, such as mentoring workshops
+                                hosted at Arizona State University in 2017.</p>
                             </div>
                             <div class="card-footer">
-                                <a class="btn btn-primary">Soon...</a>
+                              <a class="btn btn-primary">Soon...</a>
                             </div>
                           </div>
                         </div>
@@ -329,7 +346,7 @@
 
                         <!-- item 1 -->
                         <div class="work-place">
-                            <h3 class="place"><img src="img/parsons-logo.png" id="parsons" alt="Parsons Corporation logo">Parsons Corporation</h3>
+                            <h3 class="place"><img src="img/webp/parsons-logo.webp" onError="this.onerror=null;this.src='img/parsons-logo.png';" id="parsons" alt="Parsons Corporation logo">Parsons Corporation</h3>
                             <p style="display: inline-block;">Centreville, VA</p>
                         </div>
                         <div class="job-meta">
@@ -372,7 +389,7 @@
                     <!-- item 3 -->
                     <div class="item">
                         <div class="work-place">
-                            <h3 class="place"><img src="img/castle-logo.png" id="castle" alt="RIT CASTLE logo">RIT Center for Advancing STEM Teaching, Learning, and Evaluation</h3>
+                            <h3 class="place"><img src="img/webp/castle-logo.webp" onError="this.onerror=null;this.src='img/castle-logo.png';" id="castle" alt="RIT CASTLE logo">RIT Center for Advancing STEM Teaching, Learning, and Evaluation</h3>
                             <p>Rochester, NY</p>
                         </div>
                         <div class="job-meta">
