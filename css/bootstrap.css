@@ -686,7 +686,6 @@ a > code {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
-  height: 900px;
 }
 
 .card > hr {
@@ -706,6 +705,13 @@ a > code {
 
 .card-text:last-child {
   margin-bottom: 0;
+}
+
+.card-header {
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, .03);
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
 }
 
 .card-footer {
@@ -1012,8 +1018,8 @@ button.bg-dark:focus {
     background: #dee3eb;
 }
 
-#contact-bg{
-    background: #dee3eb;
+#other-bg {
+  background: #dee3eb;
 }
 
 #cc{
@@ -1026,4 +1032,10 @@ button.bg-dark:focus {
 
 #castle{
     padding-right: 2%;
+}
+
+.blockquote-footer {
+  display: block;
+  font-size: 80%;
+  color: #6c757d;
 }
