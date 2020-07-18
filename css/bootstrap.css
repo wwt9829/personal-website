@@ -1003,7 +1003,6 @@ button.bg-dark:focus {
     background-image: url("../img/webp/mission-statement-background.webp");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     padding-top: 2%;
     padding-bottom: 5%;
     margin: 0;
@@ -1020,6 +1019,13 @@ button.bg-dark:focus {
 
 #etc-bg {
   background: #dee3eb;
+}
+
+#footer-bg{
+  background-image: url("../img/webp/mission-statement-background.webp");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
 }
 
 #dod{
