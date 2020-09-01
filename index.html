@@ -4,13 +4,15 @@
   <head>
 
       <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124661711-1"></script>
+      <script async src="https://googletagmanager.com/gtag/js?id=UA-124661711-1"></script>
       <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('set', {'user_id': 'USER_ID'}); // Set the user ID using signed-in user_id.
-          gtag('config', 'UA-124661711-1');
+          gtag('config', 'UA-124661711-1', {
+              cookie_flags: 'max-age=7200;secure;samesite=none'
+          });
       </script>
 
     <meta charset="utf-8">
@@ -34,7 +36,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
       <div class="container">
-        <a class="navbar-brand" href="#"><img class="img-fluid mx-auto lazyload" data-src="img/webp/logo.webp" onError="this.onerror=null;this.src='img/logo.png';" alt="Wyatt Tauber logo"></a>
+        <a class="navbar-brand" href="#"><img class="img-fluid mx-auto lazyload" style="width: 65vw;" data-src="img/webp/logo.webp" onError="this.onerror=null;this.src='img/logo.png';" alt="Wyatt Tauber logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -72,7 +74,7 @@
     <div id="mission-statement">
         <div class="text-center">
           <h1 class="mt-5">I want to make technology more secure and accessible for everyone.</h1>
-          <p class="lead">Security enthusiast | Geocacher | Objectivist | Blogger | Speaker | Amateur media critic | Wannabe toucan owner</p>
+          <p class="lead">Security enthusiast | Geocacher | Objectivist | Blogger | Researcher | Speaker | Amateur media critic | Wannabe toucan owner</p>
           <p><i class="fas fa-user"></i> 21 <i class="fas fa-map-marker-alt"></i> Washington, DC</p>
         </div>
     </div>
@@ -87,13 +89,14 @@
                     <br>
                     <h2>Hello! I am Wyatt.</h2>
                     <h4>Cybersecurity student at the Rochester Institute of Technology</h4>
-                    <p>I am a fourth-year student in the M.S. Computing Security program at RIT, just starting my career in the industry and striving to create technology that is secure, inclusive and accessible for all people, and a joy to use. Some of the ways I'm achieving my goal are by researching computer malware, forensics, and usable security, participating in cybersecurity red/blue competitions and Capture the Flag events, traveling for STEM outreach around the world, and working to address bias and data ethics in academic research and the media. I also enjoy being a lifelong student through incorporating other disciplines and perspectives into my activities, from technology to psychology, philosophy, journalism, communication, and politics.</p>
-                    <p>On campus, I am a member of the RIT Security Club (<a href="https://ritsec.club/" target="_blank" rel="noopener">RITSEC</a>), <a href="https://www.rit.edu/clubs/first/" target="_blank" rel="noopener" >RIT FIRST</a>, and the <a href="https://honors.rit.edu/" target="_blank" rel="noopener" >RIT Honors Program</a>. I also enjoy adventurous activities such as geocaching in the Rochester area, climbing, and traveling with my friends. In the future, I hope to obtain a Ph.D. in information assurance and own a paramotor.</p>
+                    <p>I am a fourth-year student in the M.S. Computing Security program at RIT, just starting my career in the industry and striving to create secure, inclusive, accessible, and joyful technologies for all to use. My research interests are in systems and network analytics for malware detection, steganography, and disinformation.</p>
+                    <p>I frequently participate in cybersecurity red/blue competitions and Capture the Flag events, participate in STEM outreach around the world, and, more recently, have been working to address media bias and ethical research issues plaguing the national dialogue. I also enjoy being a lifelong student by incorporating other disciplines and perspectives into my activities, from technology to psychology, philosophy, journalism, communication, and political science.</p>
+                    <p>I am a member of the RIT Security Club (<a href="https://www.ritsec.club/" target="_blank" rel="noopener">RITSEC</a>), <a href="https://rit.edu/clubs/first/" target="_blank" rel="noopener" >RIT FIRST</a>, and the <a href="https://honors.rit.edu/" target="_blank" rel="noopener" >RIT Honors Program</a> in my spare time. I also enjoy adventurous activities such as geocaching in the Rochester area, bouldering, and traveling with my friends. In the future, I hope to obtain a Ph.D. in information assurance and own a paramotor.</p>
 
                     <!-- social media items -->
                     <ul class="social-icons">
                         <li>
-                            <a href="https://www.linkedin.com/in/wyatttauber/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <a href="https://linkedin.com/in/wyatttauber/" target="_blank" rel="noopener" aria-label="LinkedIn">
                                 <i class="fab fa-linkedin"></i>
                             </a>
                         </li>
@@ -113,7 +116,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youracclaim.com/users/wyatt-tauber" target="_blank" rel="noopener" aria-label="Acclaim">
+                            <a href="https://youracclaim.com/users/wyatt-tauber" target="_blank" rel="noopener" aria-label="Acclaim">
                                 <i class="fas fa-angle-double-up"></i>
                             </a>
                         </li>
@@ -123,7 +126,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/channel/UCNy_xZS1_zcalqthwYJTWow" target="_blank" rel="noopener" aria-label="YouTube">
+                            <a href="https://youtube.com/channel/UCNy_xZS1_zcalqthwYJTWow" target="_blank" rel="noopener" aria-label="YouTube">
                                 <i class="fab fa-youtube"></i>
                             </a>
                         </li>
@@ -173,41 +176,48 @@
                 <!-- icon 1 -->
                 <div class="col-lg-4 col-sm-6 text-center mb-4">
                     <br>
-                    <img class="img-fluid d-block mx-auto lazyload" data-src="img/webp/cybercorps.webp" onError="this.onerror=null;this.src='img/cybercorps.png';" alt="CyberCorps Scholarship for Service logo">
+                    <a href="https://sfs.opm.gov/" target="_blank" rel="noopener">
+                        <img class="img-fluid d-block mx-auto lazyload" data-src="img/webp/cybercorps.webp" onError="this.onerror=null;this.src='img/cybercorps.png';" alt="CyberCorps Scholarship for Service logo">
+                    </a>
                     <br>
                     <h3>Awards
-                        <small>NSF, ACT, NFIB</small>
+                        <small>NSF, ISSA, Black Hat</small>
                     </h3>
-                    <p>I was awarded the National Science Foundation's <a href="https://www.sfs.opm.gov/Overview-History.aspx" target="_blank" rel="noopener">CyberCorps Scholarship for Service</a> while attending RIT in recognition of my academic achievements and personal commitment to making national systems and data more secure and accountable to civilians.</p>
-                    <p>I was also one of four students to achieve <a href="https://www.act.org/content/act/en/newsroom/act-names-national-semifinalists-2017-act-college-and-career-readiness-campaign.html" target="_blank" rel="noopener">Exemplar</a> status during the ACT's College and Career Readiness Campaign and one of 100 students to receive the National Federation of Independent Business's <a href="https://www.nfib.com/assets/NFIB-Awards-Top-Young-Entrepreneurs-of-2017.pdf" target="_blank" rel="noopener">Young Entrepreneur Award</a>. I received these awards for my continued efforts to bring STEM opportunities to my high school and surrounding communities in rural northern Minnesota.</p>
+                    <p>I was awarded the National Science Foundation's CyberCorps Scholarship for Service (<a href="https://sfs.opm.gov/" target="_blank" rel="noopener">SFS</a>) while attending RIT to recognize my academic achievements and personal commitment to making national systems and data more secure and accountable to civilians.</p>
+                    <p>I was also the recipient of the International Systems Security Association (<a href="https://issaef.org/honorees/scholarship-winners/" target="_blank" rel="noopener">ISSA</a>)'s Howard A. Schmidt Award in honor of the past president of the ISSA International Board, presidential computer security adviser, and US-CERT chief security strategist, as well as the <a href="https://www.blackhat.com/us-20/scholarships.html" target="_blank" rel="noopener">Black Hat Student Scholarship</a>. I was awarded these scholarships due to my academics, activities, and desire to work in national security.</p>
                 </div>
 
                 <!-- icon 2 -->
                 <div class="col-lg-4 col-sm-6 text-center mb-4">
                     <h3>
-                        <img data-src="img/webp/cnsp.webp" class="lazyload" onError="this.onerror=null;this.src='img/cnsp.png';" alt="CompTIA CNSP logo">
-                        <img data-src="img/webp/ccna.webp" class="lazyload" onError="this.onerror=null;this.src='img/ccna.jpg';" alt="Cisco CCNA logo">
+                        <a href="https://www.youracclaim.com/badges/a971b1e8-aa7c-4658-a9c7-6a298ed71492" target="_blank" rel="noopener">
+                            <img data-src="img/webp/cnsp.webp" class="lazyload" onError="this.onerror=null;this.src='img/cnsp.png';" alt="CompTIA CNSP logo"></a>
+                        <a href="https://youracclaim.com/earner/earned/badge/9952fffd-4b4e-44a5-9fba-76201a3a0e5d" target="_blank" rel="noopener">
+                            <img data-src="img/webp/cccoa.webp" class="lazyload" onError="this.onerror=null;this.src='img/cccoa.jpg';" alt="Cisco CCCOA logo">
+                        </a>
                     </h3>
                         <br>
                     <h3>Certifications
                         <small>CompTIA, Cisco</small>
                     </h3>
-                    <p>I currently hold CompTIA Cybersecurity Analyst+ (<a href="https://www.youracclaim.com/earner/earned/badge/9518bed5-bbed-4e97-b50d-3ca9d4f48df0" target="_blank" rel="noopener">CySA+</a>) and Cisco Certified Network Associate Security (<a href="https://www.youracclaim.com/earner/earned/badge/6699f2e3-fc43-4c6d-b4d3-8b54c1505985" target="_blank" rel="noopener">CCNA Sec</a>), as well as CompTIA <a href="https://www.youracclaim.com/badges/6d9edafa-87ad-4646-a88e-43f9796a6c3f" target="_blank" rel="noopener">PenTest+</a>, <a href="https://www.youracclaim.com/earner/earned/badge/11701d23-b784-4d5a-be9e-6ea64fccaaf5" target="_blank" rel="noopener">Security+</a>, and CCNA Routing and Switching (<a href="https://www.youracclaim.com/badges/7b4e10a0-5630-4b08-9cfe-1b293346928e" target="_blank" rel="noopener">CCNA R&S</a>). Certifications are complementary to my classes and projects at RIT, and I see them as an excellent way to validate and reinforce my growing skill set.</p>
-                    <p>I plan to obtain further certifications in network security soon, as well as continue pursing certifications in system forensics and penetration testing. These certifications will validate skills I have learned in classes, while on internships, and during competitions.</p>
+                    <p>I currently hold CompTIA Cybersecurity Analyst+ (<a href="https://youracclaim.com/earner/earned/badge/9518bed5-bbed-4e97-b50d-3ca9d4f48df0" target="_blank" rel="noopener">CySA+</a>) and Cisco Certified CyberOps Associate (<a href="https://youracclaim.com/earner/earned/badge/9952fffd-4b4e-44a5-9fba-76201a3a0e5d" target="_blank" rel="noopener">CCCOA</a>), as well as CompTIA <a href="https://youracclaim.com/badges/6d9edafa-87ad-4646-a88e-43f9796a6c3f" target="_blank" rel="noopener">PenTest+</a>, <a href="https://youracclaim.com/earner/earned/badge/11701d23-b784-4d5a-be9e-6ea64fccaaf5" target="_blank" rel="noopener">Security+</a>, and Cisco Certified Network Associate (<a href="https://youracclaim.com/earner/earned/badge/2bbbb5ea-1f47-4490-8fc0-868a3a6afa2e" target="_blank" rel="noopener">CCNA</a> - <a href="https://youracclaim.com/earner/earned/badge/85692ce4-2523-4389-8bb6-8d62f8ccc6d5" target="_blank" rel="noopener">Sec</a>, <a href="https://youracclaim.com/badges/7b4e10a0-5630-4b08-9cfe-1b293346928e" target="_blank" rel="noopener">R&S</a>). Certifications complement my classes and projects at RIT, and I see them as an excellent way to validate and reinforce my growing skillset.</p>
+                    <p>I plan to obtain further certifications in security analytics and blue team operations soon. These certifications will validate the skills I have learned through classes, personal projects, internships, and competitions.</p>
                 </div>
 
                 <!-- icon 3 -->
                 <div class="col-lg-4 col-sm-6 text-center mb-4">
                     <br>
-                    <img class="img-fluid d-block mx-auto lazyload" style="height: 98px;" data-src="img/webp/hoth.webp" onError="this.onerror=null;this.src='img/hoth.png';" alt="Hackers on the Hill logo">
+                    <a href="https://hackersonthehill.org/" target="_blank" rel="noopener">
+                        <img class="img-fluid d-block mx-auto lazyload" style="height: 98px;" data-src="img/webp/hoth.webp" onError="this.onerror=null;this.src='img/hoth.png';" alt="Hackers on the Hill logo">
+                    </a>
                     <br>
                     <h3>Activism
                         <small>
                             <p>HotH, FIRST, Scholarship America</p>
                         </small>
                     </h3>
-                    <p>I frequently advocate for cybersecurity proficiency and the technology workforce in the federal government. As part of <a href="https://hackersonthehill.org/" target="_blank" rel="noopener">Hackers on the Hill</a>, I met with members of the Committee on Homeland Security and Governmental Affairs to address the cyber talent gap and the shortfalls in federal, state and local cybersecurity employees.</p>
-                    <p>I was one of 30 <a href="https://blog.scholarshipamerica.org/meet-the-2017-national-student-volunteer-of-the-year" target="_blank" rel="noopener">honorees</a> at Scholarship America's National Dreams to Success Awards for improving STEM curriculum and extracurricular opportunities for students in rural areas. Involving myself as a <a href="https://equityinlearning.act.org/equity-in-action/deeper-look-stem-readiness/" target="_blank" rel="noopener">FIRST Robotics volunteer</a>, a Computing Security Ambassador, and a member of RIT IMPRESS helps me achieve these goals.</p>
+                    <p>I frequently advocate for cybersecurity proficiency and the technology workforce in the federal government. As part of <a href="https://hackersonthehill.org/" target="_blank" rel="noopener">Hackers on the Hill</a>, I met with the Committee on Homeland Security and Governmental Affairs to address the cyber talent gap and the shortfalls in federal, state, and local cybersecurity employees.</p>
+                    <p>I was one of 30 <a href="https://blog.scholarshipamerica.org/meet-the-2017-national-student-volunteer-of-the-year" target="_blank" rel="noopener">honorees</a> at Scholarship America's National Dreams to Success Awards for improving STEM curriculum and extracurricular opportunities for students in rural areas. Involving myself as a <a href="https://equityinlearning.act.org/equity-in-action/deeper-look-stem-readiness/" target="_blank" rel="noopener">FIRST Robotics volunteer</a>, a Computing Security Ambassador, and an RIT IMPRESS member helps me achieve these goals.</p>
                 </div>
 
             </div>
@@ -215,7 +225,7 @@
             <!--other accomplishments-->
             <div class="text-center">
                 <p>
-                    Other accomplishments and badges are available on <a href="https://www.youracclaim.com/users/wyatt-tauber" target="_blank" rel="noopener"><i class="fas fa-angle-double-up"></i> Acclaim</a>
+                    Other accomplishments and badges are available on <a href="https://youracclaim.com/users/wyatt-tauber" target="_blank" rel="noopener"><i class="fas fa-angle-double-up"></i> Acclaim</a>
                 </p>
             </div>
             <br>
@@ -244,13 +254,13 @@
                                     <h4 class="card-title">Malware Meta-Analysis</h4>
                                     <p class="card-text">May 2020</p>
                                     <p class="card-text">I chose to re-evaluate the methodologies and rigor of academic malware publications for my CyberCorps
-                                        and Advanced Malware Forensics research project. Based on the paper "Prudent Practices for Designing Malware Experiments", I re-performed
+                                        and Advanced Malware Forensics research project. Based on the paper "Prudent Practices for Designing Malware Experiments," I re-performed
                                         the original experiment to determine if proper sampling, analysis, and safety measures improved since 2012. </p>
                                     <p>I plan to continue developing this paper in the hope of submitting it to a conference sometime in Fall 2020.</p>
                                     <p>Watch my project presentation below.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="https://www.youtube.com/watch?v=CLjfUzvmprE" class="btn btn-primary" target="_blank" rel="noopener">Presentation</a>
+                                    <a href="https://youtube.com/watch?v=CLjfUzvmprE" class="btn btn-primary" target="_blank" rel="noopener">Presentation</a>
                                 </div>
                             </div>
                         </div>
@@ -262,8 +272,8 @@
                                 <div class="card-body">
                                     <h4 class="card-title">Hackers on the Hill</h4>
                                     <p class="card-text">January 2020</p>
-                                    <p class="card-text">I had the opportunity to meet with the Minority Staff Director for the Committee on Homeland Security and Governmental Affairs and staffers with the cyber security subcommittee.</p>
-                                    <p >We discussed cybersecurity policy goals for the upcoming session, such as expanding the department's security workforce, retaining cyber proficiency, regulating emerging technologies and vulnerability management, and how to drive change in critical infrastructure and sector specific networks.</p>
+                                    <p class="card-text">I had the opportunity to meet with the Minority Staff Director for the Committee on Homeland Security and Governmental Affairs and staffers with the cybersecurity subcommittee.</p>
+                                    <p >We discussed cybersecurity policy goals for the upcoming session, such as expanding the department's security workforce, retaining cyber proficiency, regulating emerging technologies and vulnerability management, and how to drive change in critical infrastructure and sector-specific networks.</p>
                                     <p>Learn more about this year's meeting below.</p>
                                 </div>
                                 <div class="card-footer">
@@ -280,11 +290,11 @@
                                     <h4 class="card-title">Cybersecurity Seminar Speaker</h4>
                                     <p class="card-text">November 2019</p>
                                     <p class="card-text">I was selected to give the opening speech at this year's Best Times Financial cybersecurity seminar as one of the four student presenters from RIT. I spoke about the attack lifecycle, the mindset of an attacker, and strategies to protect financial data stored on personal devices.</p>
-                                    <p>All speeches from the Seminar, including mine, the keynote given by Dr. Justin Pelletier, and speeches given by the other student volunteers, were streamed during the conference.</p>
+                                    <p>All speeches from the Seminar, including mine, the keynote by Dr. Justin Pelletier, and the other student volunteers' speeches, were streamed during the conference.</p>
                                     <p class="card-text">View the recording at the link below.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="https://www.youtube.com/watch?v=s2oJua75StE" class="btn btn-primary" target="_blank" rel="noopener">Video</a>
+                                    <a href="https://youtube.com/watch?v=s2oJua75StE" class="btn btn-primary" target="_blank" rel="noopener">Video</a>
                                 </div>
                             </div>
                         </div>
@@ -296,8 +306,8 @@
                                 <div class="card-body">
                                     <h4 class="card-title">Forensics Curriculum Development</h4>
                                     <p class="card-text">August 2019</p>
-                                    <p class="card-text">In RIT’s Computer System Forensics class, students learn basic incident response procedures as well as methods to uncover and investigate the activities of computer users. While the class is well-designed and the concepts presented are highly applicable, assignments and labs can grow a bit stale.</p>
-                                    <p>Such was the case for Spring 2019's memory acquisition and analysis lab. I rewrote this lab to provide a more reliable student experience when using the Volatility Framework. My rewritten lab can be viewed below.</p>
+                                    <p class="card-text">In RIT's Computer System Forensics class, students learn necessary incident response procedures and methods to uncover and investigate computer users' activities. While the course is well-designed and the concepts presented are highly applicable, assignments and labs can grow a bit stale.</p>
+                                    <p>Such was the case for Spring 2019's memory acquisition and analysis lab. I rewrote this lab to provide a more reliable student experience when using the Volatility Framework. My rewritten lab is available below.</p>
                                 </div>
                                 <div class="card-footer">
                                     <a href="https://medium.com/@wywyit/updating-rit-system-forensics-volatility-lab-f434f145562a" class="btn btn-primary" target="_blank" rel="noopener">Volatility Lab</a>
@@ -310,22 +320,34 @@
             </div>
 
             <!--competitions-->
-            <p class="lead font-weight-bold">Competitions</p>
+            <p class="lead font-weight-bold">Activities</p>
             <div class="row justify-content-center text-center">
                 <div>
-                    <p>Red/Blue</p>
+                    <p>Competitions</p>
                     <a class="badge-info rounded text-center" style="color: white; padding: 0.3em;">Black Team, RITSEC IRSeC 2020</a>
                     <a class="badge-info rounded text-center" style="color: white; padding: 0.3em;">White Team, RITSEC IRSeC 2019</a>
                     <a class="badge-info rounded text-center" style="color: white; padding: 0.3em;">Blue Team (4th Place), RITSEC ISTS 2019</a>
                     <a class="badge-info rounded text-center" style="color: white; padding: 0.3em;">Blue Team (4th Place), RC3 IRSeC 2018</a>
                     <br>
                     <br>
-                    <p>CTF</p>
+                    <p>CTFs</p>
                     <a class="badge-info rounded text-center" style="color: white; padding: 0.3em;">1st Place, RITSEC Demos, Spring 2019</a>
                     <a class="badge-info rounded text-center" style="color: white; padding: 0.3em;">4th Place, RITSEC Demos, Fall 2018</a>
                     <a class="badge-info rounded text-center" style="color: white; padding: 0.3em;">RITSEC CTF, 2018</a>
                     <a class="badge-info rounded text-center" style="color: white; padding: 0.3em;">RC3 CTF, 2017</a>
                     <a class="badge-info rounded text-center" style="color: white; padding: 0.3em;">RC3 Demos, 2017</a>
+                    <br>
+                    <br>
+                    <p>Conferences</p>
+                    <a class="badge-info rounded text-center" style="color: white; padding: 0.3em;">DEF CON (Safe Mode)</a>
+                    <a class="badge-info rounded text-center" style="color: white; padding: 0.3em;">Black Hat</a>
+                    <a class="badge-info rounded text-center" style="color: white; padding: 0.3em;">Layer 8 Con</a>
+                    <a class="badge-info rounded text-center" style="color: white; padding: 0.3em;">ShmooCon</a>
+                    <a class="badge-info rounded text-center" style="color: white; padding: 0.3em;">CyberCorps SFS Convention</a>
+                    <a class="badge-info rounded text-center" style="color: white; padding: 0.3em;">ISSA RSS</a>
+                    <a class="badge-info rounded text-center" style="color: white; padding: 0.3em;">Security BSides (Rochester)</a>
+                    <a class="badge-info rounded text-center" style="color: white; padding: 0.3em;">Dreams to Success Awards</a>
+
 
 
             <!--other projects-->
@@ -364,7 +386,10 @@
                     <!-- item 1 -->
                     <div class="item">
                         <div class="work-place">
-                            <h3 class="place"><img data-src="img/webp/dod.webp" height="50" class="lazyload" onError="this.onerror=null;this.src='img/dod.jpg';" id="dod" alt="DoD logo">United States Department of Defense</h3>
+                            <h3 class="place">
+                                <a href="https://defense.gov/" target="_blank" rel="noopener"><img data-src="img/webp/dod.webp" height="50" class="lazyload" onError="this.onerror=null;this.src='img/dod.jpg';" id="dod" alt="DoD logo"></a>
+                                United States Department of Defense
+                            </h3>
                             <p style="display: inline-block;">Washington, DC</p>
                         </div>
                         <div class="job-meta">
@@ -379,7 +404,10 @@
                     <!-- item 2 -->
                     <div class="item">
                         <div class="work-place">
-                            <h3 class="place"><img data-src="img/webp/mitre.webp" height="25" class="lazyload" onError="this.onerror=null;this.src='img/mitre.png';" id="mitre" alt="MITRE logo">The MITRE Corporation</h3>
+                            <h3 class="place">
+                                <a href="https://mitre.org/" target="_blank" rel="noopener"><img data-src="img/webp/mitre.webp" height="25" class="lazyload" onError="this.onerror=null;this.src='img/mitre.png';" id="mitre" alt="MITRE logo"></a>
+                                The MITRE Corporation
+                            </h3>
                             <p style="display: inline-block;">National Security Engineering Center; Bedford, MA</p>
                         </div>
                         <div class="job-meta">
@@ -387,7 +415,7 @@
                             <div class="time">Summer 2020</div>
                         </div>
                         <div class="job-desc">
-                            <p>MITRE works in the public interest across federal, state and local governments, as well as industry and academia to bring innovative ideas into existence in areas such as artificial intelligence, data science, quantum information science, health informatics, space security, policy and economic expertise, trustworthy autonomy, cyber threat sharing, and cyber resilience.</p>
+                            <p>MITRE works in the public interest across federal, state, and local governments, as well as industry and academia, to bring innovative ideas into existence in areas such as artificial intelligence, data science, quantum information science, health informatics, space security, policy and economic expertise, trustworthy autonomy, cyber threat sharing, and cyber resilience.</p>
                             <ul>
                                 <li>Developed a scalable and abstract software-defined network model for national security sponsors</li>
                             </ul>
@@ -406,7 +434,10 @@
                     <!-- item 3 -->
                     <div class="item">
                         <div class="work-place">
-                            <h3 class="place"><img data-src="img/webp/parsons-logo.webp" class="lazyload" onError="this.onerror=null;this.src='img/parsons-logo.png';" id="parsons" alt="Parsons Corporation logo">Parsons Corporation</h3>
+                            <h3 class="place">
+                                <a href="https://www.parsons.com/" target="_blank" rel="noopener"><img data-src="img/webp/parsons-logo.webp" class="lazyload" onError="this.onerror=null;this.src='img/parsons-logo.png';" id="parsons" alt="Parsons Corporation logo"></a>
+                                Parsons Corporation
+                            </h3>
                             <p style="display: inline-block;">Cyber Operations, Parsons Government Services; Centreville, VA</p>
                         </div>
                         <div class="job-meta">
@@ -433,7 +464,10 @@
                     <!-- item 4 -->
                     <div class="item">
                         <div class="work-place">
-                            <h3 class="place"><img data-src="img/webp/castle-logo.webp" class="lazyload" onError="this.onerror=null;this.src='img/castle-logo.png';" id="castle" alt="RIT CASTLE logo">RIT Center for Advancing STEM Teaching, Learning, and Evaluation</h3>
+                            <h3 class="place">
+                                <a href="https://rit.edu/castle" target="_blank" rel="noopener"><img data-src="img/webp/castle-logo.webp" class="lazyload" onError="this.onerror=null;this.src='img/castle-logo.png';" id="castle" alt="RIT CASTLE logo"></a>
+                                RIT Center for Advancing STEM Teaching, Learning, and Evaluation
+                            </h3>
                             <p>Rochester Institute of Technology; Rochester, NY</p>
                         </div>
                         <div class="job-meta">
@@ -441,7 +475,7 @@
                             <div class="time">Summer 2018</div>
                         </div>
                         <div class="job-desc">
-                            <p>CASTLE is a network of faculty, projects and programs committed to improving science and math collaboration between educators, education researchers, and students. Members engage in scholarship of pedagogy, facilitating dialog, encouraging collaborative opportunities in evidence-based practices, conducting discipline-based education research and establishing methods of assessment and evaluation.</p>
+                            <p>CASTLE is a network of faculty, projects, and programs committed to improving science and math collaboration between educators, education researchers, and students. Members engage in scholarship of pedagogy, facilitating dialog, encouraging collaborative opportunities in evidence-based practices, conducting discipline-based education research, and establishing methods of assessment and evaluation.</p>
                             <ul>
                                 <li>Assisted in the coordination of the IMPRESS Summer Experience for incoming freshmen</li>
                             </ul>
@@ -449,7 +483,7 @@
                                 <li>Researched and developed learning activities focused on metacognition</li>
                             </ul>
                             <ul>
-                                <li>Planned metacognitive, reflective, and cocurricular day and evening events</li>
+                                <li>Planned metacognitive, reflective, and co-curricular day and evening events</li>
                             </ul>
                             <ul>
                                 <li>Provided a high level of personal support to Summer Experience participants</li>
@@ -468,7 +502,9 @@
                 <!-- item 1 -->
                 <div class="item col-12 col-md-4">
                     <div class="item-inner">
-                        <img data-src="img/webp/rit.webp" height="30" class="lazyload" onError="this.onerror=null;this.src='img/rit.png';" id="rit" alt="RIT logo">
+                        <a href="https://rit.edu" target="_blank" rel="noopener">
+                            <img data-src="img/webp/rit.webp" height="30" class="lazyload" onError="this.onerror=null;this.src='img/rit.png';" id="rit" alt="RIT logo">
+                        </a>
                         <p class="lead">M.S. Computing Security</p>
                         <div>Rochester Institute of Technology</div>
                         <div>Rochester, New York</div>
@@ -482,7 +518,9 @@
                 <!-- item 2 -->
                 <div class="item col-12 col-md-4">
                     <div class="item-inner">
-                        <img data-src="img/webp/rit.webp" height="30" class="lazyload" onError="this.onerror=null;this.src='img/rit.png';" id="rit" alt="RIT logo">
+                        <a href="https://rit.edu" target="_blank" rel="noopener">
+                            <img data-src="img/webp/rit.webp" height="30" class="lazyload" onError="this.onerror=null;this.src='img/rit.png';" id="rit" alt="RIT logo">
+                        </a>
                         <p class="lead">B.S. Computing Security</p>
                         <div>Rochester Institute of Technology</div>
                         <div>Rochester, New York</div>
@@ -497,7 +535,9 @@
                 <!-- item 3 -->
                 <div class="item col-12 col-md-4">
                     <div class="item-inner">
-                        <img data-src="img/webp/atcc.webp" height="30" class="lazyload" onError="this.onerror=null;this.src='img/atcc.png';" id="atcc" alt="ATCC logo">
+                        <a href="https://alextech.edu" target="_blank" rel="noopener">
+                            <img data-src="img/webp/atcc.webp" height="30" class="lazyload" onError="this.onerror=null;this.src='img/atcc.png';" id="atcc" alt="ATCC logo">
+                        </a>
                         <p class="lead">A.A.S. Liberal Arts and Sciences</p>
                         <div>Alexandria Technical & Community College</div>
                         <div>Alexandria, Minnesota</div>
@@ -511,12 +551,28 @@
 
             <!-- organizations -->
             <p class="lead font-weight-bold">Organizations</p>
-            <div class="row justify-content-center" style="padding-left: 6em">
-                <img data-src="img/webp/orgs-access.webp" height="80" class="lazyload" style="padding-right: 5%" onError="this.onerror=null;this.src='img/orgs-access.png';" alt="Access Network logo">
-                <img data-src="img/webp/orgs-first.webp" height="80" class="lazyload" style="padding-right: 5%" onError="this.onerror=null;this.src='img/orgs-first.png';" alt="FIRST logo">
-                <img data-src="img/webp/orgs-infragard.webp" height="80" class="lazyload" style="padding-right: 5%" onError="this.onerror=null;this.src='img/orgs-infragard.png';" alt="InfraGard logo">
-                <img data-src="img/webp/orgs-issa.webp" height="80" class="lazyload" style="padding-right: 5%" onError="this.onerror=null;this.src='img/orgs-issa.png';" alt="ISSA logo">
-                <img data-src="img/webp/orgs-ritsec.webp" height="80" class="lazyload" onError="this.onerror=null;this.src='img/orgs-ritsec.png';" alt="RITSEC logo">
+            <div class="row justify-content-center">
+                <a href="https://accessnetwork.org/" target="_blank" rel="noopener">
+                    <img data-src="img/webp/orgs-access.webp" height="60" class="lazyload" style="padding-right: 15%" onError="this.onerror=null;this.src='img/orgs-access.png';" alt="Access Network logo">
+                </a>
+                <a href="https://firstinspires.org/" target="_blank" rel="noopener">
+                    <img data-src="img/webp/orgs-first.webp" height="60" class="lazyload" style="padding-right: 20%" onError="this.onerror=null;this.src='img/orgs-first.png';" alt="FIRST logo">
+                </a>
+                <a href="https://infragard.org/" target="_blank" rel="noopener">
+                    <img data-src="img/webp/orgs-infragard.webp" height="60" class="lazyload" style="padding-right: 20%" onError="this.onerror=null;this.src='img/orgs-infragard.png';" alt="InfraGard logo">
+                </a>
+                <a href="https://isaca.org/" target="_blank" rel="noopener">
+                    <img data-src="img/webp/orgs-isaca.webp" height="60" class="lazyload" style="padding-right: 15%" onError="this.onerror=null;this.src='img/orgs-isaca.png';" alt="ISACA logo">
+                </a>
+                <a href="https://issa.org/" target="_blank" rel="noopener">
+                    <img data-src="img/webp/orgs-issa.webp" height="60" class="lazyload" style="padding-right: 20%" onError="this.onerror=null;this.src='img/orgs-issa.png';" alt="ISSA logo">
+                </a>
+                <a href="https://www.ritsec.club/" target="_blank" rel="noopener">
+                    <img data-src="img/webp/orgs-ritsec.webp" height="60" class="lazyload" style="padding-right: 15%" onError="this.onerror=null;this.src='img/orgs-ritsec.png';" alt="RITSEC logo">
+                </a>
+                <a href="https://tnt3102.org/" target="_blank" rel="noopener">
+                    <img data-src="img/webp/orgs-tnt.webp" height="60" class="lazyload" onError="this.onerror=null;this.src='img/orgs-tnt.png';" alt="Tech-No-Tigers logo">
+                </a>
             </div>
             <br>
 
@@ -591,7 +647,7 @@
         <br>
         <div class="text-center">
             <p>
-                Detailed work experience, classes, and testimonials are available on <a href="https://www.linkedin.com/in/wyatttauber/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                Detailed work experience, classes, and testimonials are available on <a href="https://linkedin.com/in/wyatttauber/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
             </p>
         </div>
         <br>
@@ -656,6 +712,18 @@
 
                     <div class="col-xl-3 col-md-4 mb-4">
                         <div class="card border-0 shadow">
+                            <a href="img/ruckus.jpg" target="_blank" rel="noopener">
+                                <img data-src="img/webp/ruckus.webp" class="lazyload card-img-top" onError="this.onerror=null;this.src='img/ruckus.jpg';" alt="FRC Rochester Ruckus">
+                            </a>
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">FRC Rah-Cha-Cha Ruckus</h5>
+                                <div class="card-text text-black-50">Rochester NY, October 2019</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-4 mb-4">
+                        <div class="card border-0 shadow">
                             <a href="img/rss.jpg" target="_blank" rel="noopener">
                                 <img data-src="img/webp/rss.webp" class="lazyload card-img-top" onError="this.onerror=null;this.src='img/rss.jpg';" alt="Rochester Security Summit">
                             </a>
@@ -680,6 +748,18 @@
 
                     <div class="col-xl-3 col-md-4 mb-4">
                         <div class="card border-0 shadow">
+                            <a href="img/aviation-and-space.jpg" target="_blank" rel="noopener">
+                                <img data-src="img/webp/aviation-and-space.webp" class="lazyload card-img-top" onError="this.onerror=null;this.src='img/aviation-and-space.jpg';" alt="Canada Aviation and Space Museum">
+                            </a>
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">Canada Aviation and Space Museum</h5>
+                                <div class="card-text text-black-50">Ottawa ON, August 2019</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-4 mb-4">
+                        <div class="card border-0 shadow">
                             <a href="img/skydiving.jpg" target="_blank" rel="noopener">
                                 <img data-src="img/webp/skydiving.webp" class="lazyload card-img-top" onError="this.onerror=null;this.src='img/skydiving.jpg';" alt="Skydiving">
                             </a>
@@ -697,7 +777,43 @@
                             </a>
                             <div class="card-body text-center">
                                 <h5 class="card-title mb-0">Apollo Anniversary Festival</h5>
-                                <div class="card-text text-black-50">Wasington DC, July 2019</div>
+                                <div class="card-text text-black-50">Washington DC, July 2019</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-4 mb-4">
+                        <div class="card border-0 shadow">
+                            <a href="img/independence-day2.jpg" target="_blank" rel="noopener">
+                                <img data-src="img/webp/independence-day.webp" class="lazyload card-img-top" onError="this.onerror=null;this.src='img/independence-day.jpg';" alt="Independence Day and Salute to America">
+                            </a>
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">Independence Day/Salute to America</h5>
+                                <div class="card-text text-black-50">Washington DC, July 2019</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-4 mb-4">
+                        <div class="card border-0 shadow">
+                            <a href="img/nationals.jpg" target="_blank" rel="noopener">
+                                <img data-src="img/webp/nationals.webp" class="lazyload card-img-top" onError="this.onerror=null;this.src='img/nationals.jpg';" alt="Washington Nationals Baseball Game">
+                            </a>
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">Washington Nationals Game</h5>
+                                <div class="card-text text-black-50">Washington DC, June 2019</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-4 mb-4">
+                        <div class="card border-0 shadow">
+                            <a href="img/irsec.jpg" target="_blank" rel="noopener">
+                                <img data-src="img/webp/irsec.webp" class="lazyload card-img-top" onError="this.onerror=null;this.src='img/irsec.jpg';" alt="RITSEC IRSeC 2019">
+                            </a>
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">Incident Response and Security Competition</h5>
+                                <div class="card-text text-black-50">Rochester NY, April 2019</div>
                             </div>
                         </div>
                     </div>
@@ -745,6 +861,18 @@
                             </a>
                             <div class="card-body text-center">
                                 <h5 class="card-title mb-0">IMPRESS Summer Experience</h5>
+                                <div class="card-text text-black-50">Rochester NY, August 2018</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-4 mb-4">
+                        <div class="card border-0 shadow">
+                            <a href="img/escape-room.jpg" target="_blank" rel="noopener">
+                                <img data-src="img/webp/escape-room.webp" class="lazyload card-img-top" onError="this.onerror=null;this.src='img/escape-room.jpg';" alt="Breakout Games Escape Rooms">
+                            </a>
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">Escape Rooms</h5>
                                 <div class="card-text text-black-50">Rochester NY, August 2018</div>
                             </div>
                         </div>
@@ -835,7 +963,7 @@
                     <div class="card-body">
                         <blockquote class="blockquote mb-0">
                             <p>Conquer anger with lack of anger; bad with good; stinginess with a gift; a liar with truth.</p>
-                            <footer class="blockquote-footer"><a href="https://www.dhammatalks.org/suttas/KN/Dhp/Ch17.html" target="_blank" rel="noopener">Anger</a>, <cite title="Source Title">Dhp XVII</cite></footer>
+                            <footer class="blockquote-footer"><a href="https://dhammatalks.org/suttas/KN/Dhp/Ch17.html" target="_blank" rel="noopener">Anger</a>, <cite title="Source Title">Dhp XVII</cite></footer>
                         </blockquote>
                         <blockquote class="blockquote mb-0">
                             <p>A creative man is motivated by the desire to achieve, not by the desire to beat others.</p>
@@ -843,7 +971,7 @@
                         </blockquote>
                         <blockquote class="blockquote mb-0">
                             <p>Treat people as if they were what they ought to be and you help them to become what they are capable of being.</p>
-                            <footer class="blockquote-footer"><a href="https://en.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe" target="_blank" rel="noopener">Johann Wolfgang von Goethe</a>, <cite title="Source Title">Wilhelm Meister’s Apprenticeship</cite>, 1795</footer>
+                            <footer class="blockquote-footer"><a href="https://en.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe" target="_blank" rel="noopener">Johann Wolfgang von Goethe</a>, <cite title="Source Title">Wilhelm Meister's Apprenticeship</cite>, 1795</footer>
                         </blockquote>
                     </div>
                 </div>
@@ -855,20 +983,20 @@
                     </div>
                     <div class="card-body">
                         <blockquote class="blockquote mb-0">
-                            <p>The question is not who is going to let me, it's who is going to stop me.</p>
+                            <p>The question is not who is going to let me; it's who is going to stop me.</p>
                             <footer class="blockquote-footer">Ayn Rand, paraphrased from <cite title="Source Title"><a href="https://en.wikipedia.org/wiki/The_Fountainhead" target="_blank" rel="noopener">The Fountainhead</a></cite>, 1943</footer>
                         </blockquote>
                         <blockquote class="blockquote mb-0">
                             <p>Be a nuisance where it counts. Be depressed, discouraged, and disappointed at failure and the disheartening effects of ignorance, greed, corruption and bad politics—but never give up.</p>
-                            <footer class="blockquote-footer"><a href="https://www.nps.gov/ever/learn/historyculture/stoneman-douglas.htm" target="_blank" rel="noopener">Marjory Stoneman Douglas</a>, <cite title="Source Title">GeoJourney</cite>, 1980</footer>
+                            <footer class="blockquote-footer"><a href="https://nps.gov/ever/learn/historyculture/stoneman-douglas.htm" target="_blank" rel="noopener">Marjory Stoneman Douglas</a>, <cite title="Source Title">GeoJourney</cite>, 1980</footer>
                         </blockquote>
                         <blockquote class="blockquote mb-0">
                             <p>I am rich no matter what I lose. I'd rather risk it all to find the truth.</p>
                             <footer class="blockquote-footer">Avicii, <cite title="Source Title"><a href="https://genius.com/Avicii-our-love-lyrics" target="_blank" rel="noopener">Our Love (Unreleased)</a></cite>, 2016</footer>
                         </blockquote>
                         <blockquote class="blockquote mb-0">
-                            <p>This whole time, I thought changing the world was something you did, an act you performed, something you fought for. I don't know if that's true any more. What if changing the world was just about being here, by showing up no matter how many times we get told we don't belong, by staying true even when we are shamed into being false, by believing in ourselves even when we're told we're too different? And if we all held on to that, if we refuse to budge and fall in line, if we stood our ground for long enough, just maybe... the world can't help but change around us.</p>
-                            <footer class="blockquote-footer"><a href="https://www.usanetwork.com/mrrobot" target="_blank" rel="noopener">Mr. Robot</a>, <cite title="Source Title">Series Finale Part 2</cite>, December 22nd, 2019</footer>
+                            <p>This whole time, I thought changing the world was something you did, an act you performed, something you fought for. I don't know if that's true any more. What if changing the world was just about being here, by showing up no matter how many times we get told we don't belong, by staying true even when we are shamed into being false, by believing in ourselves even when we're told we're too different? And if we all held on to that, if we refuse to budge and fall in line, if we stood our ground for long enough, just maybe the world can't help but change around us.</p>
+                            <footer class="blockquote-footer"><a href="https://usanetwork.com/mrrobot" target="_blank" rel="noopener">Mr. Robot</a>, <cite title="Source Title">Series Finale Part 2</cite>, December 22nd, 2019</footer>
                         </blockquote>
                     </div>
                 </div>
@@ -911,14 +1039,14 @@
                         <strong>Contacts</strong>
                         <br>
                         <br>Email: <a href="mailto:me@wyatttauber.com">me@wyatttauber.com</a>
-                        <br>Phone: +1 (218) 536-1570
+                        <br>Phone: <a href="tel:2185361570">+1 (218) 536-1570</a>
                         <br>
                     </p>
                 </div>
 
                 <!-- google map -->
                 <div class="col-md-6">
-                    <div style="width: 100%"><iframe class="lazyload" title="Google Maps - Rochester Institute of Technology" width="100%" height="300" data-src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Rochester%20Institute%20of%20Technology+(Rochester%20Institute%20of%20Technology)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Google map generator</a></iframe></div><br />
+                    <div style="width: 100%"><iframe class="lazyload" title="Google Maps - Rochester Institute of Technology" width="100%" height="300" data-src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Rochester%20Institute%20of%20Technology+(Rochester%20Institute%20of%20Technology)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://maps.ie/create-google-map/">Google map generator</a></iframe></div><br />
                 </div>
 
             </div>
