@@ -24,7 +24,7 @@
     <link rel="shortcut icon" href="./favicon.ico" />
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Font Awesome CSS -->
     <script src="https://kit.fontawesome.com/6392250b52.js" crossorigin="anonymous"></script>
@@ -53,18 +53,18 @@
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
             </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#experience">Experience</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#etc">Etcetera</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="https://1drv.ms/f/s!Al4cPlqRHIVDiptNpwe81XDnirby3A" target="_blank" rel="noopener">Resume</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#etc">Etcetera</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://1drv.ms/f/s!Al4cPlqRHIVDiptNpwe81XDnirby3A" target="_blank" rel="noopener">Resume</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -128,6 +128,11 @@
                         <li>
                             <a href="https://youtube.com/channel/UCNy_xZS1_zcalqthwYJTWow" target="_blank" rel="noopener" aria-label="YouTube">
                                 <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://open.spotify.com/user/wywyit11?si=02830d0c91354dcd" target="_blank" rel="noopener" aria-label="Spotify">
+                                <i class="fab fa-spotify"></i>
                             </a>
                         </li>
 
@@ -237,132 +242,27 @@
 
                     <!-- header text -->
                     <h1 class="mt-5">Projects</h1>
-                    <p class="lead">A selection of projects and activities I've worked on</p>
+                    <p class="lead">A selection of projects and articles I've worked on</p>
 
                     <!-- Medium blog -->
-                    <p class="lead font-weight-bold" style="text-align: left">Recent Blog Post</p>
                     <div class='card' id="medium-widget" style="text-align: left; padding-left: 2%">
                         <div style="width: 400px;">
                             <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-                            <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@wywyit","postsPerLine":1,"limit":1,"picture":"small","fields":["description","author","claps","likes","publishAt"],"ratio":"original"}})</script>
+                            <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@wywyit","postsPerLine":1,"limit":6,"picture":"small","fields":["description","author","claps","likes","publishAt"],"ratio":"original"}})</script>
                         </div>
                     </div>
                     <br>
 
-                    <!-- projects bar -->
-                    <div class="row text-center">
-
-                        <!-- column 1 -->
-                        <div class="col-lg-3 col-md-6 mb-4">
-                            <div class="card" style="height: 900px;">
-                                <a href="https://youtube.com/watch?v=CLjfUzvmprE" target="_blank" rel="noopener">
-                                    <img class="card-img-top lazyload" data-src="img/webp/prudent.webp" onError="this.onerror=null;this.src='img/prudent.png';" alt="Prudent Practices II presentation">
-                                </a>
-                                <div class="card-body">
-                                    <h4 class="card-title">Malware Meta-Analysis</h4>
-                                    <p class="card-text">May 2020</p>
-                                    <p class="card-text">I chose to re-evaluate the methodologies and rigor of academic malware publications for my CyberCorps
-                                        and Advanced Malware Forensics research project. Based on the paper "Prudent Practices for Designing Malware Experiments," I re-performed
-                                        the original experiment to determine if proper sampling, analysis, and safety measures improved since 2012. </p>
-                                    <p class="card-text">I plan to continue developing this paper in the hope of submitting it to a conference sometime in 2021.</p>
-                                    <p class="card-text">Watch my project presentation below.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <a href="https://youtube.com/watch?v=CLjfUzvmprE" class="btn btn-primary" target="_blank" rel="noopener">Meta-Analysis Paper</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- column 2 -->
-                        <div class="col-lg-3 col-md-6 mb-4">
-                            <div class="card" style="height: 900px;">
-                                <a href="https://www.youtube.com/watch?v=ifVsNcJt2Ss" target="_blank" rel="noopener">
-                                    <img class="card-img-top lazyload" data-src="img/webp/memery.webp" onError="this.onerror=null;this.src='img/memery.png';" alt="Title slide of Memery.exe presentation">
-                                </a>
-                                <div class="card-body">
-                                    <h4 class="card-title">Memery.exe</h4>
-                                    <p class="card-text">April 2020</p>
-                                    <p class="card-text">My friends and I created a custom command-and-control server and Windows malware written in C++ for our Malware Reverse Engineering class. Our malware could obtain system information such as processes, usernames and passwords, network information, and operating system version. It also could send and receive files across a network using a custom encryption algorithm.</p>
-                                    <p class="card-text">We also reverse engineered our client malware using IDA Pro and presented the project to our class.</p>
-                                    <p class="card-text">Our detailed analysis is available below.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <a href="https://www.youtube.com/watch?v=ifVsNcJt2Ss" class="btn btn-primary" target="_blank" rel="noopener">Memery.exe Presentation</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- column 3 -->
-                        <div class="col-lg-3 col-md-6 mb-4">
-                            <div class="card" style="height: 900px;">
-                                <a href="https://www.youtube.com/watch?v=LrceKDFWE3U" target="_blank" rel="noopener">
-                                    <img class="card-img-top lazyload" data-src="img/webp/volatility.webp" onError="this.onerror=null;this.src='img/volatility.png';" alt="Title slide of Volatility presentation">
-                                </a>
-                                <div class="card-body">
-                                    <h4 class="card-title">Volatility 3 Presentation</h4>
-                                    <p class="card-text">December 2019</p>
-                                    <p class="card-text">I reviewed the beta release of Volatility 3 for my Computer Systems Security final project. In my presentation, I explained how computer memory functions, introduced fundamental memory analysis and forensic techniques, and discussed the release of Volatility 3 as well as the landmark changes it presents for memory analysis.</p>
-                                    <p class="card-text">Then, I demonstrated Volatility 3 by using various commands  to identify the Zeus rootkit on a memory image obtained from an infected Windows system.</p>
-                                    <p class="card-text">Check out the presentation and demo below.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <a href="https://www.youtube.com/watch?v=LrceKDFWE3U" class="btn btn-primary" target="_blank" rel="noopener">Volatility 3 Review</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- column 4 -->
-                        <div class="col-lg-3 col-md-6 mb-4">
-                            <div class="card" style="height: 900px;">
-                                <a href="https://github.com/wwt9829/CSEC-742-Project" target="_blank" rel="noopener">
-                                    <img class="card-img-top lazyload" data-src="img/webp/css-ctf.webp" onError="this.onerror=null;this.src='img/css-ctf.png';" alt="Thumbnail of Shellshock exploit video">
-                                </a>
-                                <div class="card-body">
-                                    <h4 class="card-title">Shellshock CTF Challenge</h4>
-                                    <p class="card-text">November 2019</p>
-                                    <p class="card-text">I created a Docker container hosting a web server vulnerable to Shellshock (CVE-2014-6271) for a course CTF. The flag could be obtained using command injection via Apache cgi-bin and exploiting an outdated version of Bash. I also configured Snort on a separate Docker container to monitor exploitation and create a threat map on the class network.</p>
-                                    <p class="card-text">I published the container and a video walkthrough of the exploitation commands at the end of the CTF.</p>
-                                    <p class="card-text">The CTF challenge Docker container is available below.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <a href="https://github.com/wwt9829/CSEC-742-Project" class="btn btn-primary" target="_blank" rel="noopener">My CTF Challenge</a>
-                                </div>
-                            </div>
-                        </div>
-
+                    <!--other projects-->
+                    <div class="text-center">
+                        <p>
+                            Past projects are available on <a href="https://medium.com/@wywyit" target="_blank" rel="noopener"><i class="fab fa-medium"></i> Medium</a>
+                        </p>
                     </div>
+                    <br>
+
                 </div>
             </div>
-
-            <!--events-->
-            <p class="lead font-weight-bold">Find me at one of these events:</p>
-            <div class="row justify-content-center">
-                <a href="https://ists.io/" target="_blank" rel="noopener">
-                    <img src="img/webp/ists-logo.webp" height="100" style="padding-right: 15%" onError="this.onerror=null;this.src='img/ists-logo.png';" alt="ISTS Logo">
-                </a>
-                <a href="https://followmoneyfightslavery.org/summit/" target="_blank" rel="noopener">
-                    <img src="img/webp/fmfs.webp" height="100" style="padding-left: 15%; padding-right: 15%" onError="this.onerror=null;this.src='img/fmfs.png';" alt="Follow Money Fight Slavery Logo">
-                </a>
-                <a href="https://cyberforcecompetition.com/" target="_blank" rel="noopener">
-                    <img src="img/webp/cyberforce.webp" height="100" style="padding-left: 15%; padding-right: 15%" onError="this.onerror=null;this.src='img/cyberforce.png';" alt="CyberForce Logo">
-                </a>
-                <a href="https://metactf.com/" target="_blank" rel="noopener">
-                    <img src="img/webp/metactf.webp" height="100" style="padding-left: 15%; padding-right: 15%" onError="this.onerror=null;this.src='img/metactf.png';" alt="MetaCTF Logo">
-                </a>
-                <a href="https://conint.io/" target="_blank" rel="noopener">
-                    <img src="img/webp/conint.webp" height="100" style="padding-left: 15%" onError="this.onerror=null;this.src='img/conint.png';" alt="ConINT Logo">
-                </a>
-            </div>
-
-            <!--other projects-->
-            <div class="text-center">
-                <br>
-                <p>
-                    Past projects and competitions are available on <a href="https://medium.com/@wywyit" target="_blank" rel="noopener"><i class="fab fa-medium"></i> Medium</a>
-                </p>
-            </div>
-            <br>
-
         </div>
     </section>
 
@@ -514,7 +414,7 @@
                         <div>Rochester Institute of Technology</div>
                         <div>Rochester, New York</div>
                         <div>GPA 4.00; 2019 - 2022</div>
-                        <div>Focus: Security analytics</div>
+                        <div>Concentration: Security analytics</div>
                         <div>Accelerated Dual Degree</div>
                         <div>CyberCorps Scholarship for Service</div>
                         <br>
@@ -531,7 +431,7 @@
                         <div>Rochester Institute of Technology</div>
                         <div>Rochester, New York</div>
                         <div>GPA 3.68; 2017 - 2021</div>
-                        <div>Focus: Malware and forensics</div>
+                        <div>Concentration: Malware and forensics</div>
                         <div>Honors Program</div>
                         <div>Mathematics minor</div>
                         <div>Dean's List</div>
@@ -556,45 +456,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- organizations -->
-            <p class="lead font-weight-bold">Organizations</p>
-            <div class="row justify-content-center">
-                <a href="https://accessnetwork.org/" target="_blank" rel="noopener">
-                    <img src="img/webp/orgs-access.webp" height="40" style="padding-right: 9%" onError="this.onerror=null;this.src='img/orgs-access.png';" alt="Access Network logo">
-                </a>
-                <a href="https://firstinspires.org/" target="_blank" rel="noopener">
-                    <img src="img/webp/orgs-first.webp" height="40" style="padding-left: 9%; padding-right: 9%" onError="this.onerror=null;this.src='img/orgs-first.png';" alt="FIRST logo">
-                </a>
-                <a href="https://infragard.org/" target="_blank" rel="noopener">
-                    <img src="img/webp/orgs-infragard.webp" height="40" style="padding-left: 9%; padding-right: 9%" onError="this.onerror=null;this.src='img/orgs-infragard.png';" alt="InfraGard logo">
-                </a>
-                <a href="https://isaca.org/" target="_blank" rel="noopener">
-                    <img src="img/webp/orgs-isaca.webp" height="40" style="padding-left: 9%; padding-right: 9%" onError="this.onerror=null;this.src='img/orgs-isaca.png';" alt="ISACA logo">
-                </a>
-                <a href="https://issa.org/" target="_blank" rel="noopener">
-                    <img src="img/webp/orgs-issa.webp" height="40" style="padding-left: 9%; padding-right: 9%" onError="this.onerror=null;this.src='img/orgs-issa.png';" alt="ISSA logo">
-                </a>
-                <a href="https://honors.rit.edu/" target="_blank" rel="noopener">
-                    <img src="img/webp/honors.webp" height="40" style="padding-left: 9%; padding-right: 9%" onError="this.onerror=null;this.src='img/honors.png';" alt="RIT Honors Program logo">
-                </a>
-                <a href="https://www.ritsec.club/" target="_blank" rel="noopener">
-                    <img src="img/webp/orgs-ritsec.webp" height="40" style="padding-left: 9%; padding-right: 9%" onError="this.onerror=null;this.src='img/orgs-ritsec.png';" alt="RITSEC logo">
-                </a>
-                <a href="https://www.sans.org/" target="_blank" rel="noopener">
-                    <img src="img/webp/sans.webp" height="40" style="padding-left: 9%; padding-right: 9%" onError="this.onerror=null;this.src='img/sans.jpg';" alt="SANS logo">
-                </a>
-                <a href="https://themanyhats.club/" target="_blan" rel="noopener">
-                    <img src="img/webp/tmhc.webp" height="40" style="padding-left: 9%; padding-right: 9%" onError="this.onerror=null;this.src='img/tmhc.png';" alt="The Many Hats Club logo">
-                </a>
-                <a href="https://tnt3102.org/" target="_blank" rel="noopener">
-                    <img src="img/webp/orgs-tnt.webp" height="40" style="padding-left: 9%; padding-right: 9%" onError="this.onerror=null;this.src='img/orgs-tnt.png';" alt="Tech-No-Tigers logo">
-                </a>
-                <a href="https://tracelabs.org/" target="_blank" rel="noopener">
-                    <img src="img/webp/trace-labs.webp" height="40" style="padding-left: 9%" onError="this.onerror=null;this.src='img/trace-labs.png';" alt="Trace Labs logo">
-                </a>
-            </div>
-            <br>
 
             <!-- skills -->
             <p class="lead font-weight-bold">Skills</p>
@@ -962,7 +823,7 @@
                             <footer class="blockquote-footer"><a href="https://dhammatalks.org/suttas/KN/Dhp/Ch17.html" target="_blank" rel="noopener">Anger</a>, <cite title="Source Title">Dhp XVII</cite></footer>
                         </blockquote>
                         <blockquote class="blockquote mb-0">
-                            <p>A creative man is motivated by the desire to achieve, not by the desire to beat others.</p>
+                            <p>A creative man is motivated by the desire to achieve, not by the desire to beat others.</p>
                             <footer class="blockquote-footer">Ayn Rand, <cite title="Source Title"><a href="https://ari.aynrand.org/issues/government-and-business/capitalism/The-Moratorium-on-Brains/" target="_blank" rel="noopener">Ford Hall Forum: The Moratorium on Brains</a></cite>, November 14th, 1971</footer>
                         </blockquote>
                         <blockquote class="blockquote mb-0">

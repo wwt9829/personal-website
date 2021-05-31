@@ -1076,6 +1076,23 @@ button.bg-dark:focus {
   overflow: hidden;
 }
 
+#icons-404{
+  overflow: hidden;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+}
+
+#footer-404-bg{
+  background-image: url("../img/webp/mission-statement-background.webp");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 #us{
   padding-right: 2%;
 }
