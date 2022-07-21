@@ -823,6 +823,51 @@ button.bg-dark:hover {
   background: #494480;
   z-index: 10;
 }
+.timeline .superitem {
+  position: relative;
+  max-width: 100%;
+}
+.timeline .superitem:last-child {
+  margin-bottom: 0;
+}
+.timeline .superitem:before {
+  content: "";
+  position: absolute;
+  left: -43px;
+  top: 0;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #fff;
+  border: 3px solid #494480;
+}
+.timeline .superitem:after {
+  content: "";
+  position: absolute;
+  left: -37px;
+  top: 6px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #fff;
+  z-index: 10;
+}
 .timeline .subitem {
   position: relative;
   max-width: 100%;
@@ -865,6 +910,50 @@ button.bg-dark:hover {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   background: #494480;
+  z-index: 10;
+}
+.timeline .noitem {
+  position: relative;
+  max-width: 100%;
+}
+.timeline .noitem:last-child {
+  margin-bottom: 0;
+}
+.timeline .noitem:before {
+  content: "";
+  position: absolute;
+  left: -43px;
+  top: 0;
+  display: inline-block;
+  /*width: 22px;*/
+  /*height: 22px;*/
+  /*-webkit-border-radius: 50%;*/
+  /*-moz-border-radius: 50%;*/
+  /*-ms-border-radius: 50%;*/
+  /*-o-border-radius: 50%;*/
+  /*border-radius: 50%;*/
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  /*background: #ffff;*/
+}
+.timeline .noitem:after {
+  content: "";
+  position: absolute;
+  left: -37px;
+  top: 6px;
+  display: inline-block;
+  /*width: 10px;*/
+  /*height: 10px;*/
+  /*-webkit-border-radius: 50%;*/
+  /*-moz-border-radius: 50%;*/
+  /*-ms-border-radius: 50%;*/
+  /*-o-border-radius: 50%;*/
+  /*border-radius: 50%;*/
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  /*background: #494480;*/
   z-index: 10;
 }
 .timeline .work-place {
