@@ -976,7 +976,7 @@ button.bg-dark:hover {
 }
 #mission-statement {
   color: #fff;
-  background-image: url(../img/webp/mission-statement-background.webp);
+  background-image: url(../img/mission-statement-background.webp);
   background-size: cover;
   background-position: center;
   padding-top: 2%;
@@ -994,7 +994,7 @@ button.bg-dark:hover {
   background: #dee3eb;
 }
 #footer-bg {
-  background-image: url(../img/webp/mission-statement-background.webp);
+  background-image: url(../img/mission-statement-background.webp);
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -1006,7 +1006,7 @@ button.bg-dark:hover {
   width: 100%;
 }
 #footer-404-bg {
-  background-image: url(../img/webp/mission-statement-background.webp);
+  background-image: url(../img/mission-statement-background.webp);
   background-size: cover;
   background-position: center;
   overflow: hidden;
